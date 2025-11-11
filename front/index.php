@@ -16,8 +16,4 @@ $categorias = traer_categorias($conx);
 // 4. MUESTRA EL CATÁLOGO SIEMPRE POR DEFECTO
 require_once __DIR__ . "/views/catalogoView.php";
 
-// ¡IMPORTANTE!
-// La redirección del administrador (si está logueado) debe manejarse internamente
-// en la vista (por ejemplo, mostrando el botón "Ir al Panel Admin")
-// o debe haber ocurrido en el controlador de login, NO AQUÍ.
 ?>
