@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: red !important;
+}
+
+.navbar-brand img{
+    height: 100px;
+    width: 100px;
+}

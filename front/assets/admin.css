@@ -1,0 +1,95 @@
+/* ==================================== */
+/* 1. CONFIGURACIÓN GENERAL Y FUENTES */
+/* ==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --admin-primary: #34495e; /* Azul Grisáceo Oscuro */
+    --admin-secondary: #f4f6f9; /* Fondo de interfaz claro */
+    --admin-highlight: #1e8449; /* Verde (para acciones positivas) */
+    --admin-danger: #e74c3c;
+    --admin-text-light: #ecf0f1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--admin-secondary);
+    color: var(--admin-primary);
+}
+
+/* ==================================== */
+/* 2. NAVBAR Y HEADER DE ADMIN */
+/* ==================================== */
+.navbar {
+    background-color: var(--admin-primary) !important;
+    border-bottom: 3px solid var(--admin-highlight);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand strong {
+    color: var(--admin-text-light) !important;
+    font-weight: 500;
+}
+
+.navbar-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.btn-danger {
+    /* Botón Cerrar Sesión */
+    background-color: var(--admin-danger);
+    border-color: var(--admin-danger);
+}
+
+/* ==================================== */
+/* 3. TABLA DE GESTIÓN (CRUD) */
+/* ==================================== */
+
+.table-gestion {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.table-gestion th {
+    background-color: #e9ecef; /* Gris claro en encabezados */
+    color: var(--admin-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.table-gestion td {
+    vertical-align: middle;
+    font-size: 0.9rem;
+    color: var(--admin-text-dark);
+}
+
+.table-gestion tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* Estilo para los botones de acción */
+.table-gestion .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Botón Agregar Planta */
+.btn-success {
+    background-color: var(--admin-highlight);
+    border-color: var(--admin-highlight);
+    font-weight: 500;
+}
+.btn-success:hover {
+    background-color: #156535;
+    border-color: #156535;
+}
+
+/* Imagen en el listado */
+.admin-thumbnail {
+    width: 60px !important;
+    height: 60px !important;
+    border: 1px solid #ddd;
+}
